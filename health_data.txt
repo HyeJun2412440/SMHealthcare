@@ -1,0 +1,10 @@
+[Exercises] 
+Total calories burned: 0 kcal 
+
+[Diets] 
+bread - 680 kcal
+Total calories intake: 680 kcal 
+
+[Total] 
+Basal metabolic rate: 1300 kcal
+The remaining calories: -620 kcal
