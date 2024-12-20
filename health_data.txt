@@ -1,10 +1,14 @@
 [Exercises] 
-Total calories burned: 0 kcal 
+swimming - 720 kcal
+pilates - 120 kcal
+Total calories burned: 840 kcal 
 
 [Diets] 
-bread - 680 kcal
-Total calories intake: 680 kcal 
+chicken - 925 kcal
+tteokbokki - 615 kcal
+rice - 600 kcal
+Total calories intake: 2140 kcal 
 
 [Total] 
 Basal metabolic rate: 1300 kcal
-The remaining calories: -620 kcal
+The remaining calories: 0 kcal

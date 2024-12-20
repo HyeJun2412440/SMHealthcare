@@ -8,6 +8,7 @@
 #ifndef cal_healthdata_h
 #define cal_healthdata_h
 
+
 #include "cal_exercise.h"
 #include "cal_diets.h"
 
@@ -39,6 +40,7 @@ Exercise exercises[MAX_EXERCISES];  // exercise history
     int diet_count;                      // number of diets
     int total_calories_burned;           // total calories burned
     int total_calories_intake;           // total calories intake
+    int remaining_calories;              // Remaining calories for the day
 } HealthData;
 
 
