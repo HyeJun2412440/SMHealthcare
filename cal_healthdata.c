@@ -24,9 +24,9 @@
     			3. save the total remaining calrories
 */
 
-void saveData(const char* HEALTHFILEPATH, const HealthData* health_data) {
+void saveData(const char* filepath, const HealthData* health_data) {
 	int i;
-    FILE* file = fopen(HEALTHFILEPATH, "w");
+    FILE* file = fopen(filepath, "w");
     if (file == NULL) {
         printf("There is no file for health data.\n");
         return;

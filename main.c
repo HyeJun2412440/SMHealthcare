@@ -13,9 +13,12 @@
 #include "cal_diets.h"
 #include "cal_healthdata.h"
 
+#define HEALTH_FILE_PATH "health_data.txt"
 #define EXERCISEFILEPATH "exercises.txt"
 #define DIETFILEPATH "diets.txt"
-#define HEALTHFILEPATH "health_data.txt"
+
+void saveData(const char* HEALTHFILEPATH, const HealthData* health_data);
+void printHealthData(const HealthData* health_data);
 
 static int choice;
 
@@ -61,7 +64,7 @@ int main() {
             	break;
                 
             case 4:
-            	saveData(HEALTHFILEPATH, &health_data);
+            	saveData(HEALTH_FILE_PATH, &health_data);
     			printf("Exit the system.\n");
     			printf("=======================================================================\n");
                 break;
@@ -75,8 +78,8 @@ int main() {
     return 0;
 }
 
-void saveData(const char* HEALTHFILEPATH, const HealthData* health_data) {
-    FILE* file = fopen(HEALTHFILEPATH, "w");
+void saveData(const char* filepath, const HealthData* health_data) {
+    FILE* file = fopen(HEALTH_FILE_PATH, "w");
     if (file == NULL) {
         printf("There is no file for health data.\n");
         return;
@@ -129,5 +132,4 @@ void printHealthData(const HealthData* health_data) {
     printf("Remaining Calories: %d\n", health_data->remaining_calories);
     printf("=======================================================================\n\n");
 }
-
 
